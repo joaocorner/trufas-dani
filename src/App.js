@@ -29,10 +29,39 @@ function App() {
       height: 100vh;
       width: 50vw;
     }
+
+    div {
+      margin: 0 auto;
+    }
+
+    h1 {
+      text-transform: uppercase;
+      font-size: 3rem;
+      color: black;
+      font-weight: 900;
+      letter-spacing: 0.2rem;
+      padding-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+      color: black;
+      font-weight: 100;
+      letter-spacing: 0.2rem;
+      padding-bottom: 1rem;
+    }
   `;
   return (
     <Container>
-      <Button>Todos os Produtos</Button>
+      <div>
+        <h1>
+          Ribeiro <br /> Delícias
+        </h1>
+        <p>
+          Criação de doces, tortas, trufas e docinhos para festas e eventos.
+        </p>
+        <Button>Todos os Produtos</Button>
+      </div>
       {/* <Button primary>Primary Button</Button> */}
       <img src="../img/IMG_20221231_233735.jpg" alt="" />
     </Container>
