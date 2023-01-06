@@ -8,21 +8,29 @@ function App() {
     color: white;
     margin: 0 1em;
     padding: 0.25em 1em;
-
-    /* ${(props) =>
-      props.primary &&
-      css`
-        background: palevioletred;
-        color: white;
-      `}; */
   `;
   const Container = styled.div`
     text-align: center;
-    background-color: #c4b3dd;
     height: 100vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    ${(props) =>
+      props.primary &&
+      css`
+        background: #c4b3dd;
+      `};
+    ${(props) =>
+      props.secondary &&
+      css`
+        background: #ebd4d9;
+      `};
+    ${(props) =>
+      props.tertiary &&
+      css`
+        background: #f1ede8;
+      `};
 
     img {
       object-fit: cover;
@@ -52,19 +60,22 @@ function App() {
     }
   `;
   return (
-    <Container>
-      <div>
-        <h1>
-          Ribeiro <br /> Delícias
-        </h1>
-        <p>
-          Criação de doces, tortas, trufas e docinhos para festas e eventos.
-        </p>
-        <Button>Todos os Produtos</Button>
-      </div>
-      {/* <Button primary>Primary Button</Button> */}
-      <img src="../img/IMG_20221231_233735.jpg" alt="" />
-    </Container>
+    <>
+      <Container primary>
+        <div>
+          <h1>
+            Ribeiro <br /> Delícias
+          </h1>
+          <p>
+            Criação de doces, tortas, trufas e docinhos para festas e eventos.
+          </p>
+          <Button>Todos os Produtos</Button>
+        </div>
+        <img src="../img/IMG_20221231_233735.jpg" alt="" />
+      </Container>
+      <Container secondary></Container>
+      <Container tertiary></Container>
+    </>
   );
 }
 
