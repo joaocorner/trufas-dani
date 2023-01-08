@@ -48,7 +48,7 @@ function App() {
       color: black;
       font-weight: 900;
       letter-spacing: 0.2rem;
-      padding-bottom: 1rem;
+      padding-bottom: 3rem;
     }
 
     p {
@@ -56,7 +56,8 @@ function App() {
       color: black;
       font-weight: 100;
       letter-spacing: 0.2rem;
-      padding-bottom: 1rem;
+      padding-bottom: 3rem;
+      width: 500px;
     }
   `;
   const Container2 = styled.div`
@@ -112,6 +113,11 @@ function App() {
       flex-direction: column;
       width: 300px;
     }
+
+    .pic {
+      border-radius: 50%;
+      border: 4px double black;
+    }
   `;
   return (
     <>
@@ -134,14 +140,18 @@ function App() {
             <div className="column">
               <img
                 src="../img/pic-1.jpeg"
-                alt="Trufa de cho"
-                className="pic1"
+                alt="trufa de chocolate"
+                className="pic"
               />
               <h2>Trufas</h2>
               <p>Diversos sabores, como chocolate, morango, maracujá & nozes</p>
             </div>
             <div className="column">
-              <img src="../img/pic-2.png" alt="" className="pic2" />
+              <img
+                src="../img/pic-2.png"
+                alt="palha italiana"
+                className="pic"
+              />
               <h2>Palhas Italianas</h2>
               <p>
                 Cobertas com açúcar de confeiteiro ou chocolate, e recheadas
@@ -149,7 +159,7 @@ function App() {
               </p>
             </div>
             <div className="column">
-              <img src="../img/pic-3.png" alt="" className="pic3" />
+              <img src="../img/pic-3.png" alt="bolo de fubá" className="pic" />
               <h2>Bolos</h2>
               <p>Fubá, Chocolate, Morango, Coco, Abacaxi, entre outros</p>
             </div>
