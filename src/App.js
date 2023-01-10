@@ -119,6 +119,42 @@ function App() {
       border: 4px double black;
     }
   `;
+  const Container3 = styled.div`
+    height: 100vh;
+    display: flex;
+    background-color: #f1ede8;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      object-fit: cover;
+      height: 100vh;
+      width: 50vw;
+    }
+
+    div {
+      margin: 0 auto;
+    }
+
+    h1 {
+      /* text-transform: uppercase; */
+      font-size: 3rem;
+      color: black;
+      font-weight: 900;
+      letter-spacing: 0.2rem;
+      padding-bottom: 3rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+      color: black;
+      font-weight: 100;
+      letter-spacing: 0.2rem;
+      padding-bottom: 3rem;
+      width: 500px;
+    }
+  `;
   return (
     <>
       <Container primary>
@@ -154,7 +190,7 @@ function App() {
               />
               <h2>Palhas Italianas</h2>
               <p>
-                Cobertas com açúcar de confeiteiro ou chocolate, e recheadas
+                Cobertas com açúcar de confeiteiro ou chocolate, e recheadas com
                 biscoito
               </p>
             </div>
@@ -166,7 +202,13 @@ function App() {
           </div>
         </div>
       </Container2>
-      <Container tertiary></Container>
+      <Container3>
+        <img src="../img/pic-4.jpeg" alt="" />
+        <div>
+          <h1>Levamos até você</h1>
+          <p>Vendas unitárias ou em maiores quantidades</p>
+        </div>
+      </Container3>
     </>
   );
 }
