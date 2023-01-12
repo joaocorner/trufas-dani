@@ -155,6 +155,49 @@ function App() {
       width: 500px;
     }
   `;
+  const Container4 = styled.div`
+    height: 100vh;
+    display: flex;
+    background-color: #c4b3dd;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      object-fit: cover;
+      height: 100vh;
+      width: 50vw;
+    }
+
+    div {
+      margin: 0 auto;
+    }
+
+    h2 {
+      width: 50%;
+      font-size: 3rem;
+      color: black;
+      font-weight: 900;
+      letter-spacing: 0.2rem;
+      padding-bottom: 3rem;
+    }
+    h3 {
+      font-size: 2rem;
+      color: black;
+      font-weight: 900;
+      letter-spacing: 0.2rem;
+      padding: 1rem 0;
+    }
+
+    p {
+      font-size: 1.5rem;
+      color: black;
+      font-weight: 100;
+      letter-spacing: 0.2rem;
+      padding-bottom: 3rem;
+      width: 500px;
+    }
+  `;
   return (
     <>
       <Container primary>
