@@ -252,6 +252,23 @@ function App() {
           <p>Vendas unitárias ou em maiores quantidades</p>
         </div>
       </Container3>
+      <Container4>
+        <h2>Entre em contato</h2>
+        <div>
+          <div>
+            <h3>Locais</h3>
+            <p>Rio de Janeiro e Três Rios</p>
+          </div>
+          <div>
+            <h3>Redes Sociais</h3>
+            <p>@deliciasdani</p>
+          </div>
+          <div>
+            <h3>Telefone/WhatsApp</h3>
+            <p>(21) 99999-9999</p>
+          </div>
+        </div>
+      </Container4>
     </>
   );
 }
