@@ -165,8 +165,10 @@ function App() {
 
     img {
       object-fit: cover;
-      height: 100vh;
-      width: 50vw;
+      height: 500px;
+      width: 500px;
+      border-radius: 50%;
+      border: 4px double black;
     }
 
     div {
@@ -174,7 +176,7 @@ function App() {
     }
 
     h2 {
-      width: 50%;
+      /* width: 50%; */
       font-size: 3rem;
       color: black;
       font-weight: 900;
@@ -253,20 +255,23 @@ function App() {
         </div>
       </Container3>
       <Container4>
-        <h2>Entre em contato</h2>
         <div>
+          <h2>Entre em contato</h2>
           <div>
             <h3>Locais</h3>
             <p>Rio de Janeiro e Três Rios</p>
           </div>
           <div>
             <h3>Redes Sociais</h3>
-            <p>@deliciasdani</p>
+            <p>@ribeiro.delicias_</p>
           </div>
           <div>
             <h3>Telefone/WhatsApp</h3>
             <p>(21) 99999-9999</p>
           </div>
+        </div>
+        <div>
+          <img src="../img/pic-5.jpeg" alt="" />
         </div>
       </Container4>
     </>
